@@ -1,6 +1,6 @@
 function temperatureConverter(valNum) {
     valNum = parseFloat(valNum);
-    let input = document.querySelector(".input2");
+    let input = document.getElementById('inputCelsius');
     input.value = Math.floor(((valNum-32) / 1.8) * 100) / 100;
     if (input.value > 50) {
       input.value = 50
@@ -15,15 +15,11 @@ function temperatureConverter(valNum) {
     else if (valNum < -112) {
       elem.value = '-112'
     }
-
-    // document.getElementById("outputCelsius").innerHTML = Math.floor(((valNum-32) / 1.8) * 100) / 100;
-
   }
 
 function temperatureConverterCel(valNumCel) {
     valNumCel = parseFloat(valNumCel);
-    // document.getElementById("outputFahrenheit").innerHTML = Math.floor(((valNumCel*1.8) + 32) * 100) / 100;
-    let input = document.querySelector(".input");
+    let input = document.getElementById('inputFahrenheit');
     input.value = Math.floor(((valNumCel * 1.8) + 32) * 100) / 100;
     if (input.value > 122) {
       input.value = 122
@@ -38,27 +34,14 @@ function temperatureConverterCel(valNumCel) {
     else if (valNumCel < -80) {
       elem.value = '-80'
     }
-    
   }
 
 function LengthConverter(valNum) {
-  // document.getElementById("outputMiles").innerHTML=valNum*0.62137;
-  let input = document.querySelector(".input4");
+  let input = document.getElementById('inputMiles');
   input.value = Math.floor((valNum*0.62137)*100)/100;
 }
 
 function LengthConverterMil(valNum) {
-  // document.getElementById("outputKilometers").innerHTML=valNum/0.62137;
-  let input = document.querySelector(".input3");
+  let input = document.getElementById('inputKilometers');
   input.value = Math.floor((valNum/0.62137)*100)/100;
 }
-// let elem = document.getElementById('myInput');
-// elem.onchange = function(e){
-//     var value = parseInt(e.target.value);
-//     if(!value || value <=-50 || value > 80) {
-//         /*Что-то делать.
-//           Очищаю поле.
-//         */
-//         e.target.value = '';
-//     }
-// }

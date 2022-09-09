@@ -14,53 +14,9 @@
     font-size: 20px;
     text-align: center;
 }
-.temp_form{
-    position: relative;
-    border: 1px solid black;
-    height: 20px;
-    left: 0%;
-    top: 35%;
-    font-size: 18px;
-
-}
-.length_form{
-    position: absolute;
-    border: 1px solid black;
-    left: 55%;
-    top: 32%;
-    font-size: 18px;
-    
-}
 .input{
     overflow: visible;
     width: 100px;
     display: block;
     border: 1px solid black;
-}
-.input2 {
-    overflow: visible;
-    width: 100px;
-    display: block;
-    border: 1px solid black;
-}
-.input3 {
-    overflow: visible;
-    width: 100px;
-    display: block;
-    border: 1px solid black;
-}
-.input4 {
-    overflow: visible;
-    width: 100px;
-    display: block;
-    border: 1px solid black;
-}
-.text_container{
-    position: relative;
-}
-.text_container_span{
-    position: absolute;
-    border: 1px solid black;
-    left: 15px;
-    top: 0px;
 }
