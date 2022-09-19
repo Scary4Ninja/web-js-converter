@@ -8,7 +8,8 @@
   <body>
     <link rel="stylesheet" href="calc.css">
     <script src="calc.js" charset="utf-8"></script>
-    <div class = "temp"><label>Температура</label>
+    <div class="Convert"> Конвертер данных </div>
+    <div class="temp"><label>Температура</label>
       <div>
         <input class="input" id="inputFahrenheit" type="number" placeholder="Фаренгейт"
           min = "-112"
@@ -28,13 +29,13 @@
     
     <div class = "length"> <label>Расстояние</label>
       <div>
-        <input class="input" id="inputKilometers" type="number" placeholder="Километры" 
+        <input class="inputLength" id="inputKilometers" type="number" placeholder="Километры" 
           oninput="LengthConverter(this.value)" 
           onchange="LengthConverter(this.value)">
       </div>
     
       <div>
-        <input class="input" id="inputMiles" type="number" placeholder="Метры" 
+        <input class="inputLength" id="inputMiles" type="number" placeholder="Мили" 
           oninput="LengthConverterMil(this.value)" 
           onchange="LengthConverterMil(this.value)">
       </div>

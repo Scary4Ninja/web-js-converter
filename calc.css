@@ -1,21 +1,48 @@
+.Convert{
+    position: absolute;
+    left: 40.5%;
+    top: 20%;
+    text-align: center;
+    font-size: 30px;
+}
+
 .temp{
     position: absolute;
     border: 0px solid black;
-    left: 15%;
-    top: 30%;
-    font-size: 20px;
+    left: 30%;
+    top: 45%;
+    font-size: 25px;
     text-align: center;
 }
 .length{
     position: absolute;
     border: 0px solid black;
     left: 60%;
-    top: 30%;
-    font-size: 20px;
-    text-align: center;
+    top: 45%;
+    font-size: 25px;
+    text-align: 5px;
 }
 .input{
+    position: relative;
+    top: 5px;
+    left: 10%;
+    margin-bottom: 5px;
     overflow: visible;
+    font-size: 20px;
+    height: 30px;
+    width: 100px;
+    display: block;
+    border: 1px solid black;
+}
+
+.inputLength{
+    position: relative;
+    top: 5px;
+    left: 5%;
+    margin-bottom: 5px;
+    overflow: visible;
+    font-size: 20px;
+    height: 30px;
     width: 100px;
     display: block;
     border: 1px solid black;
