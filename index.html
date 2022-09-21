@@ -1,43 +1,51 @@
 <!doctype html>
 <head>
     <title>Конвертер данных</title>
-    <script defer src="/assets/js/jquery-3.6.1.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
   <body>
     <link rel="stylesheet" href="calc.css">
     <script src="calc.js" charset="utf-8"></script>
-    <div class="Convert"> Конвертер данных </div>
+    <div class="convert"> Конвертер данных </div>
+    <p><a class="img" onclick="AuthorsInfo()"> </a></p>
     <div class="temp"><label>Температура</label>
       <div>
-        <input class="input" id="inputFahrenheit" type="number" placeholder="Фаренгейт"
+        <input class="input" id="inputFahrenheit" type="number" value="0"
           min = "-112"
           max = "122"
           oninput="temperatureConverter(this.value)"
           onchange="temperatureConverter(this.value)"/>
+          <p class="unit">°F</p>
       </div>
     
       <div>
-        <input class="input" id="inputCelsius" type="number" placeholder="Цельсии"
+        <input class="input" id="inputCelsius" type="number" value="0"
           min = "-80"
           max = "50"
           oninput="temperatureConverterCel(this.value)"
           onchange="temperatureConverterCel(this.value)"/>
+          <p class="unit2">°C</p>
       </div> 
     </div>
     
     <div class = "length"> <label>Расстояние</label>
       <div>
-        <input class="inputLength" id="inputKilometers" type="number" placeholder="Километры" 
+        <input class="inputLength" id="inputKilometers" type="number" value="0"
+          min = "0"
+          max = "999999999"
           oninput="LengthConverter(this.value)" 
           onchange="LengthConverter(this.value)">
+          <p class="unit3">Км</p>
       </div>
     
       <div>
-        <input class="inputLength" id="inputMiles" type="number" placeholder="Мили" 
+        <input class="inputLength" id="inputMiles" type="number"  value="0"
+          min = "0"
+          max = "999999999"
           oninput="LengthConverterMil(this.value)" 
           onchange="LengthConverterMil(this.value)">
+          <p class="unit4">Ми</p>
       </div>
     </div>
     
