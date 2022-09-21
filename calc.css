@@ -1,22 +1,93 @@
+.convert{
+    position: absolute;
+    left: 40.5%;
+    top: 20%;
+    text-align: center;
+    font-size: 30px;
+}
+
 .temp{
     position: absolute;
     border: 0px solid black;
-    left: 15%;
-    top: 30%;
-    font-size: 20px;
+    left: 30%;
+    top: 45%;
+    font-size: 25px;
     text-align: center;
 }
 .length{
     position: absolute;
     border: 0px solid black;
     left: 60%;
-    top: 30%;
-    font-size: 20px;
-    text-align: center;
+    top: 45%;
+    font-size: 25px;
+    text-align: 5px;
 }
 .input{
-    overflow: visible;
+    position: relative;
+    top: 5px;
+    left: 10%;
+    margin-bottom: 5px;
+    font-size: 20px;
+    height: 30px;
     width: 100px;
     display: block;
     border: 1px solid black;
+}
+
+.inputLength{
+    position: relative;
+    top: 5px;
+    left: 5%;
+    margin-bottom: 5px;
+    font-size: 20px;
+    height: 30px;
+    width: 100px;
+    display: block;
+    border: 1px solid black;
+}
+
+a.img{
+    position: absolute;
+    background-image: url(info.jpg);
+    border: 2px solid black;
+    display: block;
+    top: 80%;
+    left: 90%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+a.img:hover{
+    background-image: url(cat.jpg);
+    height: 50px;
+    width: 50px;
+}
+
+.unit{
+    position: absolute;
+    left: 75px;
+    top: 12px;
+    font-size: 24px;
+}
+
+.unit2{
+    position: absolute;
+    left: 75px;
+    top: 52px;
+    font-size: 24px;
+}
+
+.unit3{
+    position: absolute;
+    left: 62px;
+    top: 12px;
+    font-size: 24px;
+}
+
+.unit4{
+    position: absolute;
+    left: 60px;
+    top: 50px;
+    font-size: 24px;
 }
