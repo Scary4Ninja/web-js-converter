@@ -4,9 +4,11 @@ function temperatureConverter(valNum) {
     input.value = Math.floor(((valNum-32) / 1.8) * 100) / 100;
     if (input.value > 50) {
       input.value = 50
+      this.alert("Пожалуйста введите температуру в диапазоне от -112 до 122");
     } 
     else if (input.value < -80){
       input.value = -80
+      this.alert("Пожалуйста введите температуру в диапазоне от -112 до 122");
     }
     let elem = document.getElementById('inputFahrenheit');
     if (valNum > 122) {
@@ -42,12 +44,28 @@ function LengthConverter(valNum) {
   valNum = parseFloat(valNum);
   let input = document.getElementById('inputMiles');
   input.value = Math.floor((valNum*0.62137)*100)/100;
+  if (input.value < 0){
+    input.value = '0';
+    this.alert("Пожалуйста введите расстояние больше 0");
+  }
+  let elem = document.getElementById('inputKilometers');
+  if (valNum < 0) {
+    elem.value = '0';
+  }
 }
 
 function LengthConverterMil(valNumKm) {
   valNumKm = parseFloat(valNumKm);
   let input = document.getElementById('inputKilometers');
   input.value = Math.floor((valNumKm/0.62137)*100)/100;
+  if (input.value < 0){
+    input.value = 0;
+    this.alert("Пожалуйста введите расстояние больше 0");
+  }
+  let elem = document.getElementById('inputMiles');
+  if (valNumKm < 0) {
+    elem.value = '0';
+  }
 }
 
 function AuthorsInfo() {
